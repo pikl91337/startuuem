@@ -8,3 +8,5 @@ b = 3+6
 
 d = 1+7
 KUI JE
+
+HOCHU OTKAKITSYA TUDA ^^^

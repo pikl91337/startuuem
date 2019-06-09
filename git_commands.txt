@@ -1,0 +1,30 @@
+sudo apt-get install git
+
+git status # статус файлов в каталоге
+
+git clone git://github.com/schacon/grit.git
+
+git add FILENAME # индексация
+
+cat .gitignore, а в файле указать , в фрмате : "*.[oa]" (файлы, заканчивающиеся на о/а)
+
+git diff # зеленым показывает строчки, которые не проиндексированы
+git diff --cached # зеленым что вы проиндексировали и что войдёт в следующий коммит
+
+git commit -v # сохранит дельту
+
+git rm # удаление файла
+
+git log # просмотр всех коммитов
+git log -p # просмотр дельт каждого коммита
+git log -p -2 # покажет дельты ДВУХ последних коммитов
+git log -p -2 --word-diff # внесённые изменения на уровне слов, а не на уровне строк.
+git log -p -2 --stat # покажет сколько изменений в каждом коммите
+git log --since=2.weeks # за последние 2 недели
+
+git config --global core.editor "atom --wait" # если не дописать wait - терминал не будет дожидаться закрытия редактора
+git config --global core.editor "subl -n -w" # для сублайма (на всякий)
+
+git commit --amend # изменяет последний коммит
+
+git reset HEAD <файл> # изменение индексации
