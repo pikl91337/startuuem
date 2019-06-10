@@ -78,3 +78,6 @@ git config --global alias.last 'log -p -1 HEAD' # git last = git log -p -1
 git branch testing # creates new branch, bud HEAD doesn't point to it yet
 
 git checkout testing # this moves HEAD to the "testing" branches
+# then change any file, make a commit, then come back to branch master and you
+# will see that file you have changed in testing branch haven't changed in
+# master branch (AWESOME)
