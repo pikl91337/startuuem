@@ -21,6 +21,7 @@ git log -p -2 # display last 2 commit's delta
 git log -p -2 --word-diff # display word changes (instead of lines)
 git log -p -2 --stat # display how many changes made in commit
 git log --since=2.weeks # display commits for last 2 weeks
+git log --oneline --decorate # hashes, branches, comments, tags of all commits
 
 git config --global core.editor "atom --wait" # change default editor (--wait means wait until editor will be closed)
 git config --global core.editor "subl -n -w" # the same for sublime text
@@ -71,3 +72,9 @@ git push [rep_name] --tags # send all tags you've created
 git config --global alias.ci commit # instead of "git commit" you can write "git ci"
 git config --global alias.unstage 'reset HEAD --' # that makes "git unstage fileA" and "git reset HEAD fileA" equivalent
 git config --global alias.last 'log -p -1 HEAD' # git last = git log -p -1
+
+
+# branches
+git branch testing # creates new branch, bud HEAD doesn't point to it yet
+
+git checkout testing # this moves HEAD to the "testing" branches
